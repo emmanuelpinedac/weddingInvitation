@@ -1,0 +1,54 @@
+
+.Welcome-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 27rem;
+  }
+  .welcomeImg {
+    height: 200px;
+    width: auto;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+  }
+  
+  .welcomeMessageContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    width: 85%;
+    /* height: 400px; */
+    padding: 35px 15px 5px 15px;
+    border: solid 2px #d6ad60;
+    color: #737373;
+    background-color: rgb(255, 255, 255, 0.6);
+  }
+
+  .welcomeMessage {
+    display: flex;
+    width: 90%;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  
+  .welcomeMessage p {
+    margin: 0;
+  }
+  .names {
+    font-family: "Alex Brush", cursive;
+    color: #565656;
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+  }
+  .fechaBoda {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    margin: 10px 0px 10px 0px;
+  }
+  /* font-family: 'Alex Brush', cursive;
+  font-family: 'Cormorant Garamond', serif; */
+  

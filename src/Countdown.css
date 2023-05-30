@@ -1,0 +1,41 @@
+.Countdown-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    width: 93%;
+    border: solid 2px #d6ad60;
+    background-color: rgb(255, 255, 255, 0.6);
+    margin: 0 auto;
+    
+}
+.Countdown-Date{
+    font-family: 'Cormorant Garamond', serif, ;
+    color: #3f3c3c;
+    font-size: 1.5rem;
+    padding:15px 0px 0px 0px;
+    margin: 0px;
+}
+.Countdown-item-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 85%;
+}
+.Countdown-item p{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+.Countdown-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 5px;
+
+    
+}
