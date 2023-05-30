@@ -11,13 +11,16 @@ function App() {
           alt="flowers-img"
         />
         <div className="welcomeMessageContainer">
-          <p className="welcomeMessage1">
-            Estamos muy Complacidos de invitarte a nuestra boda
-          </p>
-          <p className="welcomeMessage2">
-            Queremos que seas parte del inicio de nuestra historia
-          </p>
-          <h1 className="names">Dayan & vinicio</h1>
+          <div className="welcomeMessage">
+            <p>
+              Estamos muy Complacidos de invitarte a nuestra boda, y queremos
+              que seas parte del inicio de nuestra historia.
+            </p>
+          </div>
+          <h1 className="names">Dayan & Vinicio</h1>
+          <h2 className="fechaBoda">
+            ¡Nos casamos el 30 de Septiembre del 2023!
+          </h2>
         </div>
       </div>
     </div>
