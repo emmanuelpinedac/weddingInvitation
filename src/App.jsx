@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App-Container">
       <Welcome />
+      <img className="ornament-img" src="src/assets/ornament-image.svg" alt="ornament-img" />
       <Countdown />
       <Card />
     </div>
@@ -15,4 +16,3 @@ function App() {
 }
 
 export default App;
-2
