@@ -1,9 +1,12 @@
-body{
-    margin: 0px;
-    padding: 0;
-    height: 1500px;
-    background-image: url(src/assets/Wedding-Background.png);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+  margin: 0px;
+  padding: 0;
+  height: 1500px;
+  background-image: url(src/assets/Wedding-Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html {
+  scroll-behavior: smooth;
 }

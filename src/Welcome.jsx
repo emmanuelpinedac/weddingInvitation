@@ -17,8 +17,8 @@ function Welcome() {
         </p>
       </div>
       <h1 className="names">Dayan & Vinicio</h1>
-      <h2 className="fechaBoda">
-        ¡Nos casamos el 30 de Septiembre del 2023!
+      <h2 className="wedding-announcement">
+        ¡Nos vamos a casar!
       </h2>
     </div>
   </div>

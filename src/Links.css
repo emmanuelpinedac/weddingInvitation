@@ -1,0 +1,44 @@
+.links-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.links-title-container h1{
+    margin: 100px 0 0 0;
+    padding: 0;
+    font-family: "Alex Brush", cursive;
+    color: #565656;
+    font-size: 3rem;
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 93%;
+    border: solid 2px #d6ad60;
+    background-color: rgb(255, 255, 255, 0.6);
+    margin: 20px auto 40px ;
+    padding: 10px 0px 10px 0px;
+
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    
+}
+.link i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.link a {
+    text-decoration: none;
+    color: #3f3c3c;
+}
+.link p {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+}

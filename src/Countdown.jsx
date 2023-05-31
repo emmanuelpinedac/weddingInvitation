@@ -44,9 +44,8 @@ const Countdown = () => {
   return (
     <div className="Countdown-Container">
       <p className="Countdown-Date">Sábado 30 de Septiembre del 2023</p>
-      
+      <br />
       <div className="Countdown-item-Container">
-        
         <div className="Countdown-item"> <p>{days}</p> <p>Días</p></div>
         <div className="Countdown-item"> <p>{hours}</p> <p>Horas</p></div>
         <div className="Countdown-item"> <p>{minutes}</p> <p>Minutos</p></div>

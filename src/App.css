@@ -1,10 +1,9 @@
-.App-Container{
-
+.App-Container {
   display: flex;
   flex-direction: column;
-
+ 
 }
-.ornament-img{
+.ornament-img {
   width: 80%;
   margin: 0 auto;
   padding: 10px;

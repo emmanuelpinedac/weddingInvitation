@@ -1,0 +1,81 @@
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 93%;
+  border: solid 2px #d6ad60;
+  background-color: rgb(255, 255, 255, 0.6);
+  margin: 200px auto 40px;
+  padding: 10px 0px 10px 0px;
+  font-family: "Cormorant Garamond", serif;
+  color: #3f3c3c;
+}
+.card-mass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-reception {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-mass h1 {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  font-family: "Alex Brush", cursive;
+  font-size: 55px;
+}
+.card-mass h2 {
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+.card-mass p {
+  margin: 0;
+  padding: 0;
+}
+
+.flower-image {
+  width: 60%;
+}
+
+.card-reception h1 {
+  margin: 30px 0 10px 0;
+  padding: 0;
+  font-family: "Alex Brush", cursive;
+  font-size: 55px;
+}
+.card-reception h2 {
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+.card-reception p {
+  margin: 0;
+  padding: 0;
+}
+.cards-location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d6ad60;
+  background-color: #ebd6b0;
+  border-radius: 10px;
+  width: 220px;
+  margin: 10px 0 40px 0;
+}
+.cards-location a {
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  color: #3f3c3c;
+  font-size: 30px;
+}
+.cards-location i {
+  font-size: 20px;
+}
+.cards-location p {
+  margin: 0 0 0 10px;
+  padding: 0;
+}
