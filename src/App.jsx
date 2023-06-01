@@ -6,6 +6,7 @@ import Card from "./Locations";
 import Links from "./Links";
 import Gifts from "./Gifts";
 import Form from "./Form";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -36,7 +37,13 @@ function App() {
         alt="ornament-img"
       />
       <Form />
-      <img src="src/assets/welcome-img.png" alt="flowers - welcome" />
+      <img className="End-Flower" src="src/assets/welcome-img.png" alt="flowers - welcome" />
+
+      <Footer />
+
+     
+
+      <br /><br /><br /><br />
     </div>
   );
 }
