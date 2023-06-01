@@ -1,7 +1,7 @@
 import React from "react";
-import "./Card.css";
+import "./Locations.css";
 
-function Card() {
+function Locations() {
   return (
     <div id="locations" className="cards-container">
       <div className="card-mass">
@@ -45,4 +45,4 @@ function Card() {
     </div>
   );
 }
-export default Card;
+export default Locations;

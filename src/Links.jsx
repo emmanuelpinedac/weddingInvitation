@@ -15,19 +15,18 @@ function Links() {
           </a>
         </li>
         <li className="link">
-          <a href="###">
+          <a href="#Gifts">
             <i class="fa-solid fa-gift"></i>
           </a>
-          <a href="####">
+          <a href="#Gifts">
             <p>Obsequios</p>
           </a>
         </li>
         <li className="link">
-          <a href="####">
-            {" "}
+          <a href="#Form">
             <i class="fa-regular fa-square-check"></i>
           </a>
-          <a href="####">
+          <a href="#Form">
             <p>Asistencia</p>
           </a>
         </li>
