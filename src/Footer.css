@@ -4,12 +4,11 @@
     align-items: center;
     width: 93%;
 
-    background-color: rgb(255, 255, 255, 0.6);
     margin: 100px auto 40px;
   }
   .Footer-text{
     font-family: "Cormorant Garamond", serif;
-    color: rgb(91, 91, 92);
+    color: rgb(62, 62, 62);
     font-size: 12px;
     text-align: center;
   }

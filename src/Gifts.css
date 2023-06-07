@@ -7,23 +7,27 @@
   background-color: rgb(255, 255, 255, 0.6);
   margin: 100px auto 40px;
 
-
   color: #3f3c3c;
 }
 .Flower-gifts {
   width: 100%;
-  margin-bottom: 40px;
 }
 .Gifts-Text-Container {
   text-align: center;
   padding: 20px;
-}
-.Gifts-Text-Container h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-}
-
-.Gifts-Text-Container h3 {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.4rem;
+}
+.sinpe-info p {
+  margin: 0 0 15px 0;
+
+}
+.sinpe-info i {
+  margin: 0 15px 0 0;
+}
+.sinpe-info {
+
+  display: flex;
+  flex-direction: column;
+ 
 }

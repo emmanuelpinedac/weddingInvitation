@@ -6,19 +6,13 @@ function Locations() {
     <div id="locations" className="cards-container">
       <div className="card-mass">
         <h1>Ceremonia</h1>
-
-        <p>Sábado 30 de Septiembre</p>
-        <p>A las 2 de la tarde</p>
-        <h2>Parroquia de la Candelaria</h2>
-        <p>San Carlos, Venecia Centro</p>
-        <div className="cards-location">
-          <a href="####">
-            <i class="fa-solid fa-location-arrow"></i>
+        <p>Sábado 2 de Setiembre</p>
+        <p>A las 10 de la mañana</p>
+        <h2>Catedral San Carlos Borromeo</h2>
+        <p>Ciudad Quesada, San Carlos</p>
+        <a className="card-location-button" href="https://waze.com/ul/hd1gfwxrcu">
+            <i class="fa-solid fa-location-arrow"></i> Direccion
           </a>
-          <a href="###">
-            <p>Direccion</p>
-          </a>
-        </div>
       </div>
 
       <img
@@ -29,18 +23,18 @@ function Locations() {
 
       <div className="card-reception">
         <h1>Recepción</h1>
-        <p>Sábado 30 de Septiembre</p>
-        <p>A las 5 de la tarde</p>
-        <h2>Salon de Eventos Vista Verde</h2>
-        <p>San Carlos, Ciudad quesada</p>
-        <div className="cards-location">
-          <a href="####">
-            <i class="fa-solid fa-location-arrow"></i>
+        <p>Sábado 2 de Setiembre</p>
+        <p>A las 11:30 de la mañana</p>
+        <h2>Restaurante las hortensias</h2>
+        <p>San Vicente, Ciudad quesada</p>
+       
+          <a className="card-location-button" href="https://waze.com/ul/hd1gfwfzzy">
+            <i class="fa-solid fa-location-arrow"></i> Direccion
           </a>
-          <a href="###">
-            <p>Direccion</p>
-          </a>
-        </div>
+          
+            
+        
+        
       </div>
     </div>
   );

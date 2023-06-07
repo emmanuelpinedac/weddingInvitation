@@ -38,11 +38,11 @@
 }
 
 .flower-image {
-  width: 60%;
+  width: 100%;
 }
 
 .card-reception h1 {
-  margin: 30px 0 10px 0;
+  margin: 20px 0 10px 0;
   padding: 0;
   font-family: "Alex Brush", cursive;
   font-size: 55px;
@@ -55,7 +55,7 @@
   margin: 0;
   padding: 0;
 }
-.cards-location {
+.card-location-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,19 +63,20 @@
   border: solid 1px #d6ad60;
   background-color: #ebd6b0;
   border-radius: 10px;
-  width: 220px;
-  margin: 10px 0 40px 0;
-}
-.cards-location a {
   text-decoration: none;
   font-family: "Cormorant Garamond", serif;
   color: #3f3c3c;
   font-size: 30px;
+  width: 220px;
+  margin: 40px 0 40px 0;
 }
-.cards-location i {
+.card-location-button i {
+  padding-right: 10px ;
+}
+/* .card-location-button i {
   font-size: 20px;
 }
-.cards-location p {
+.card-location-button p {
   margin: 0 0 0 10px;
   padding: 0;
-}
+} */
