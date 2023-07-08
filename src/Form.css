@@ -1,9 +1,90 @@
-.Form-Container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 93%;
-    border: solid 2px #d6ad60;
-    background-color: rgb(255, 255, 255, 0.6);
-    margin: 100px auto 40px;
+.Form-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 93%;
+  border: solid 2px #d6ad60;
+  background-color: rgb(255, 255, 255, 0.6);
+  margin: 50px auto 40px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.form-title {
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+}
+h1,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  padding: 10px;
+}
+
+.menu-title {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 25px;
+}
+.wedding-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  width: 20rem;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+
+.each-label {
+  display: flex;
+  flex-direction: row;
+}
+.name-label {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-name {
+  width: 20rem;
+  height: 30px;
+}
+.age-label {
+  text-align: center;
+}
+
+.menu-labels {
+  margin: 20px;
+}
+.entrance-label {
+  margin: 20px;
+}
+.menu-subtitle {
+  text-align: center;
+}
+.text-box {
+  text-align: center;
+}
+textarea {
+  width: 20rem;
+}
+.form-button {
+  width: 8rem;
+  margin: 15px;
+  cursor: pointer;
 }

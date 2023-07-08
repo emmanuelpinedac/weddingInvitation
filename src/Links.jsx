@@ -8,7 +8,7 @@ function Links() {
       <ul className="links-container">
         <li className="link">
           <a href="#locations">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
           </a>
           <a href="#locations">
             <p>Ubicacion</p>
@@ -16,7 +16,7 @@ function Links() {
         </li>
         <li className="link">
           <a href="#Gifts">
-            <i class="fa-solid fa-gift"></i>
+            <i className="fa-solid fa-gift"></i>
           </a>
           <a href="#Gifts">
             <p>Obsequios</p>
@@ -24,7 +24,7 @@ function Links() {
         </li>
         <li className="link">
           <a href="#Form">
-            <i class="fa-regular fa-square-check"></i>
+            <i className="fa-regular fa-square-check"></i>
           </a>
           <a href="#Form">
             <p>Asistencia</p>

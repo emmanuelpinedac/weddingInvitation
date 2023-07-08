@@ -24,10 +24,10 @@ function Gifts() {
         </h3>
         <div className="sinpe-info">
           <p>
-            <i class="fa-regular fa-user"></i> Dayan Pérez Solera
+            <i className="fa-regular fa-user"></i> Dayan Pérez Solera
           </p>
           <p>
-            <i class="fa-solid fa-mobile-screen"></i> 8736-9951
+            <i className="fa-solid fa-mobile-screen"></i> 8736-9951
           </p>
         </div>
       </div>
