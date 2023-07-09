@@ -12,13 +12,14 @@ function Locations() {
         <p>Ciudad Quesada, San Carlos</p>
         <a
           className="card-location-button"
+          target="_blank"
           href="https://waze.com/ul/hd1gfwxrcu"
         >
           <i className="fa-solid fa-location-arrow"></i> Direccion
         </a>
       </div>
 
-      <img  
+      <img
         className="flower-image"
         src="src/assets/flower2-image.png"
         alt="flores"
@@ -33,6 +34,7 @@ function Locations() {
 
         <a
           className="card-location-button"
+          target="_blank"
           href="https://waze.com/ul/hd1gfwfzzy"
         >
           <i className="fa-solid fa-location-arrow"></i> Direccion

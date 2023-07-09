@@ -85,6 +85,11 @@ textarea {
 }
 .form-button {
   width: 8rem;
+  height: 50px;
   margin: 15px;
   cursor: pointer;
+  border-radius: 10px;
+  border: solid 1px #d6ad60;
+  background-color: #ebd6b0;
+  color: #3f3c3c;
 }

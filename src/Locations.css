@@ -69,14 +69,8 @@
   font-size: 30px;
   width: 220px;
   margin: 40px 0 40px 0;
+  cursor: pointer;
 }
 .card-location-button i {
-  padding-right: 10px ;
+  padding-right: 10px;
 }
-/* .card-location-button i {
-  font-size: 20px;
-}
-.card-location-button p {
-  margin: 0 0 0 10px;
-  padding: 0;
-} */
