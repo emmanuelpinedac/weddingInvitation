@@ -11,7 +11,7 @@ function Gifts() {
         </h2>
         <img
           className="Flower-gifts"
-          src="src/assets/flower3-image.png"
+          src="/assets/flower3-image.png"
           alt="flores-regalos"
         />
         <h3>

@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik } from "formik";
 import "./Form.css";
 import axios from "axios";
 
 function Form() {
+  const [isAttending, setIsAttending] = useState(true);
+  const [isAdult, setIsAdult] = useState(true);
+
   const onSubmit = async (values) => {
+    values.age = isAdult;
+    values.attendance = isAttending;
     const data = await axios.post(
       "https://us-central1-weddinginvitation-727ad.cloudfunctions.net/app/api/confirmaciones",
       values
     );
     alert("Formulario enviado");
+  };
+
+  const toggleAttendance = () => {
+    setIsAttending(!isAttending);
+  };
+
+  const toggleAdult = () => {
+    setIsAdult(!isAdult);
   };
 
   return (
@@ -18,8 +31,6 @@ function Form() {
       <Formik
         initialValues={{
           name: "",
-          attendance: false,
-          age: false,
           message: "",
           entrancedish: "",
           maindish: "",
@@ -43,8 +54,9 @@ function Form() {
                   <input
                     name="attendance"
                     type="radio"
-                    value={true}
-                    onChange={handleChange}
+                    value={isAttending}
+                    defaultChecked
+                    onChange={toggleAttendance}
                   />
                   <p>Asistiré</p>
                 </div>
@@ -52,8 +64,8 @@ function Form() {
                   <input
                     name="attendance"
                     type="radio"
-                    value={false}
-                    onChange={handleChange}
+                    value={!isAttending}
+                    onChange={toggleAttendance}
                   />
                   <p>No podré asistir</p>
                 </div>
@@ -74,95 +86,105 @@ function Form() {
               />
             </label>
 
-            <label className="age-label">
-              <strong>
-                <p>Favor indique si es un adulto o un niño:</p>
-              </strong>
-              <div className="label-container">
-                <div className="each-label">
-                  <input
-                    name="age"
-                    type="radio"
-                    value={true}
-                    onChange={handleChange}
-                  />
-                  <p>Adulto</p>
-                </div>
-                <div className="each-label">
-                  <input
-                    name="age"
-                    type="radio"
-                    value={false}
-                    onChange={handleChange}
-                  />
-                  <p>Niño</p>
-                </div>
-              </div>
-            </label>
-
-            <div className="menu-form">
-              <h3 className="menu-title">Seleccion del Menú</h3>
-
-              <div className="menu-labels">
-                <label className="entrance-label">
-                  <strong className="menu-subtitle">
-                    <p>Seleccione su plato de entrada:</p>
+            {isAttending && (
+              <>
+                <label className="age-label">
+                  <strong>
+                    <p>Favor indique si es un adulto o un niño:</p>
                   </strong>
-                  <br />
-                  <input
-                    name="entrancedish"
-                    type="radio"
-                    value={"Crema de ayote"}
-                    onChange={handleChange}
-                  />
-                  Crema de ayote
-                  <br />
-                  <br />
-                  <input
-                    name="entrancedish"
-                    type="radio"
-                    value={"Ensalada Hortensias"}
-                    onChange={handleChange}
-                  />
-                  Ensalada Hortensias: Lechuga, tomate, pepino, zanahoria,
-                  crutones, semillas mixtas con aderezo de maracuyá y eneldo
+                  <div className="label-container">
+                    <div className="each-label">
+                      <input
+                        name="age"
+                        type="radio"
+                        value={isAdult}
+                        defaultChecked
+                        onChange={toggleAdult}
+                      />
+                      <p>Adulto</p>
+                    </div>
+                    <div className="each-label">
+                      <input
+                        name="age"
+                        type="radio"
+                        value={!isAdult}
+                        onChange={toggleAdult}
+                      />
+                      <p>Niño</p>
+                    </div>
+                  </div>
                 </label>
-              </div>
 
-              <div className="menu-labels">
-                <label>
-                  <strong className="menu-subtitle">
-                    <p>Seleccione su plato fuerte:</p>
-                  </strong>
-                  <br />
-                  <input
-                    name="maindish"
-                    type="radio"
-                    value={"Costilla de cerdo "}
-                    onChange={handleChange}
-                  />
-                  Costilla de cerdo en salsa BBQ de tamarindo
-                  <br />
-                  <br />
-                  <input
-                    name="maindish"
-                    type="radio"
-                    value={"Pollo relleno"}
-                    onChange={handleChange}
-                  />
-                  Pollo relleno de queso gouda y panceta
-                  <br />
-                  <br />
-                  <input
-                    name="maindish"
-                    type="radio"
-                    value={"Salmón al eneldo "}
-                    onChange={handleChange}
-                  />
-                  Salmón al eneldo
-                </label>
-              </div>
-            </div>
+                {isAdult && (
+                  <>
+                    <div className="menu-form">
+                      <h3 className="menu-title">Seleccion del Menú</h3>
+
+                      <div className="menu-labels">
+                        <label className="entrance-label">
+                          <strong className="menu-subtitle">
+                            <p>Seleccione su plato de entrada:</p>
+                          </strong>
+                          <br />
+                          <input
+                            name="entrancedish"
+                            type="radio"
+                            value={"Crema de ayote"}
+                            onChange={handleChange}
+                          />
+                          Crema de ayote.
+                          <br />
+                          <br />
+                          <input
+                            name="entrancedish"
+                            type="radio"
+                            value={"Ensalada Hortensias"}
+                            onChange={handleChange}
+                          />
+                          Ensalada Hortensias: Lechuga, tomate, pepino,
+                          zanahoria, crutones, semillas mixtas con aderezo de
+                          maracuyá y eneldo.
+                        </label>
+                      </div>
+
+                      <div className="menu-labels">
+                        <label>
+                          <strong className="menu-subtitle">
+                            <p>Seleccione su plato fuerte:</p>
+                          </strong>
+                          <br />
+                          <input
+                            name="maindish"
+                            type="radio"
+                            value={"Costilla de cerdo "}
+                            onChange={handleChange}
+                          />
+                          Costilla de cerdo en salsa BBQ de tamarindo.
+                          <br />
+                          <br />
+                          <input
+                            name="maindish"
+                            type="radio"
+                            value={"Pollo relleno"}
+                            onChange={handleChange}
+                          />
+                          Pollo relleno de queso gouda y panceta.
+                          <br />
+                          <br />
+                          <input
+                            name="maindish"
+                            type="radio"
+                            value={"Salmón al eneldo "}
+                            onChange={handleChange}
+                          />
+                          Salmón al eneldo.
+                        </label>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </>
+            )}
 
             <label className="text-box">
               <h3>Déjanos un mensaje especial:</h3>

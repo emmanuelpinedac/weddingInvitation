@@ -6,7 +6,7 @@ function Welcome() {
     <div className="Welcome-Container">
       <img
         className="welcomeImg"
-        src="src/assets/welcome-img.png"
+        src="/assets/welcome-img.png"
         alt="flowers-img"
       />
       <div className="welcomeMessageContainer">

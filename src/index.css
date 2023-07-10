@@ -3,7 +3,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-image: url(src/assets/Wedding-Background.png);
+  background-image: url(/assets/Wedding-Background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

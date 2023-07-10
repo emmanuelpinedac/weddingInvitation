@@ -14,32 +14,32 @@ function App() {
       <Welcome />
       <img
         className="ornament-img"
-        src="src/assets/ornament-image.svg"
+        src="/assets/ornament-image.svg"
         alt="ornament-img"
       />
       <Countdown />
       <Links />
       <img
         className="ornament-img"
-        src="src/assets/ornament-image.svg"
+        src="/assets/ornament-image.svg"
         alt="ornament-img"
       />
       <Card />
       <img
         className="ornament-img"
-        src="src/assets/ornament-image.svg"
+        src="/assets/ornament-image.svg"
         alt="ornament-img"
       />
       <Gifts />
       <img
         className="ornament-img"
-        src="src/assets/ornament-image.svg"
+        src="/assets/ornament-image.svg"
         alt="ornament-img"
       />
       <Form />
       <img
         className="End-Flower"
-        src="src/assets/welcome-img.png"
+        src="/assets/welcome-img.png"
         alt="flowers - welcome"
       />
 

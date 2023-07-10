@@ -21,7 +21,7 @@ function Locations() {
 
       <img
         className="flower-image"
-        src="src/assets/flower2-image.png"
+        src="/assets/flower2-image.png"
         alt="flores"
       />
 
